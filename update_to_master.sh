@@ -22,6 +22,8 @@
 # point to the head of their master branch.
 # This has the effect of updating the demo.
 
+# This is intended to be run in a geomoose/geomoose recursive clone
+
 git checkout master && \
 git submodule foreach 'git checkout master && git pull' && \
 git commit -a -m 'Update submodules to master'
